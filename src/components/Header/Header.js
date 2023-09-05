@@ -5,6 +5,7 @@ const Header = () => {
     return (
         <div className='header'>
             <h2>New Era Fast Food</h2>
+            this is for git problem solving
         </div>
     );
 };
