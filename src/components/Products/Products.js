@@ -9,17 +9,24 @@ const Products = () => {
         fetch('product.json')
             .then(res => res.json())
             .then(data => setProducts(data))
-    }, [])
+    }, []);
+    const [cart, setCart] = useState([]);
+    const btnHandler = id => {
+        const find = products.find(product => product.id === id);
+        if (find) {
+            setCart(find)
+        }
+    }
     return (
         <div className='products'>
             <div className="product">
 
                 {
-                    products.map(product => <Product key={product.id} products={product}></Product>)
+                    products.map(product => <Product key={product.id} products={product} btnHandeler={btnHandler}></Product>)
                 }
             </div>
             <div className="cart">
-                <Cart></Cart>
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     );
