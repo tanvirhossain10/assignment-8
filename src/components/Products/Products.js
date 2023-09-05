@@ -14,9 +14,11 @@ const Products = () => {
     const btnHandler = id => {
         const find = products.find(product => product.id === id);
         if (find) {
-            setCart(find)
+            setCart([find, ...cart])
         }
+
     }
+
     return (
         <div className='products'>
             <div className="product">

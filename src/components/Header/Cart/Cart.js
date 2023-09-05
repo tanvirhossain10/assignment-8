@@ -1,13 +1,20 @@
 import React from 'react';
 import './Cart.css'
+import SingleCart from '../../SingleCart/SingleCart';
 
 const Cart = ({ cart }) => {
-    const { img, name } = cart;
+    // console.log(cart)
+    // let img;
+    // let name;
+    // for (const singleCart of cart) {
+    //     let { img, name } = singleCart
+    //     console.log(singleCart)
+
     return (
         <div className='cart'>
             <div className="cart-info">
-                <img src={img} alt="" />
-                <p>{name}</p>
+                {cart.map(singlecrt => <SingleCart SingleCart={singlecrt} key={singlecrt.id}></SingleCart>)}
+
             </div>
         </div>
     );

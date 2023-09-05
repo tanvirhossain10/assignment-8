@@ -1,0 +1,12 @@
+.single-cart-info {
+    /* display: flex; */
+    display: inline-flex;
+    align-items: center;
+
+    /* position: static; */
+}
+
+.single-cart-info img,
+p {
+    margin-left: 30px;
+}
