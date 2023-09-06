@@ -1,8 +1,8 @@
 import React from 'react';
 import './Cart.css'
-import SingleCart from '../../SingleCart/SingleCart';
+import SingleCart from '../SingleCart/SingleCart';
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, ChoseForMEBtn, choseAginBtn }) => {
     // console.log(cart)
     // let img;
     // let name;
@@ -18,8 +18,12 @@ const Cart = ({ cart }) => {
                     {cart.map(singlecrt => <SingleCart SingleCart={singlecrt} key={singlecrt.id}></SingleCart>)}
                 </div>
                 <div id='randomBtnDiv'>
-                    <button id='randomBtn'>Chose 1 FOR ME </button>
-                    <button id='choseAgianBtn'>Chose 1 FOR ME </button>
+                    {/* {
+                        cart.length <= 2 ? null : (
+                            <button onClick={() => ChoseForMEBtn(cart)} id='randomBtn'>Chose 1 FOR ME </button>
+                        )} */}
+                    <button onClick={() => ChoseForMEBtn(cart)} id='randomBtn'>Chose 1 FOR ME </button>
+                    <button onClick={() => choseAginBtn(cart)} id='choseAgianBtn'>Chose Again </button>
                 </div>
 
             </div>

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Products.css'
 import Product from '../Product/Product';
-import Cart from '../Header/Cart/Cart';
+import Cart from '../Cart/Cart';
+import { randomNumber } from '../Utilities/randomnumber';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
@@ -27,7 +28,28 @@ const Products = () => {
 
 
     }
-    console.log(random)
+
+
+
+    const ChoseForMEBtn = (arr) => {
+        console.log(arr)
+        const ran = randomNumber(random);
+        console.log(ran);
+        const findRandomFood = arr.find(randomnum => randomnum.random === ran);
+        if (arr.length > 1) {
+            if (findRandomFood) {
+                alert(`You can eat randomly ${findRandomFood.name} which price is ${findRandomFood.price}`)
+            }
+
+
+        }
+        else {
+            console.log('alert')
+            alert('Please select at least two products for randomly selected product')
+        }
+
+
+    }
 
     return (
         <div className='products'>
@@ -38,7 +60,8 @@ const Products = () => {
                 }
             </div>
             <div className="cart">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart} ChoseForMEBtn={ChoseForMEBtn}></Cart>
+
             </div>
         </div>
     );
