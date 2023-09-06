@@ -11,11 +11,13 @@
     margin-left: 50px;
     gap: 40px;
     margin-right: 50px;
+    /* position: relative; */
 }
 
 .cart {
-    background-color: white;
-    height: 20%;
+    /* background-color: white; */
+    /* height: 20%; */
+    /* position: relative; */
     border-radius: 20px;
 
 

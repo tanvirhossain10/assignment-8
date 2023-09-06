@@ -11,9 +11,12 @@ const Cart = ({ cart }) => {
     //     console.log(singleCart)
 
     return (
-        <div className='cart'>
+        <div className='cart-c'>
             <div className="cart-info">
-                {cart.map(singlecrt => <SingleCart SingleCart={singlecrt} key={singlecrt.id}></SingleCart>)}
+                <h3>Selected foods</h3>
+                <div className="allSelectedFood">
+                    {cart.map(singlecrt => <SingleCart SingleCart={singlecrt} key={singlecrt.id}></SingleCart>)}
+                </div>
 
             </div>
         </div>

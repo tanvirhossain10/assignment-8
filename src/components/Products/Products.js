@@ -14,7 +14,7 @@ const Products = () => {
     const btnHandler = id => {
         const find = products.find(product => product.id === id);
         if (find) {
-            setCart([find, ...cart])
+            setCart([...cart, find])
         }
 
     }
