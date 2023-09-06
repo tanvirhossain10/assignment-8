@@ -14,6 +14,10 @@ const Products = () => {
     const [cart, setCart] = useState([]);
     const [random, setRandom] = useState([]);
     const btnHandler = id => {
+        if (cart.length === 4) {
+            alert('You will be fatty.So you can not select more than 4 food products');
+            return
+        }
         const find = products.find(product => product.id === id);
         if (find) {
             const duplicateSelect = cart.find(product => product.id === id);
@@ -38,7 +42,7 @@ const Products = () => {
         const findRandomFood = arr.find(randomnum => randomnum.random === ran);
         if (arr.length > 1) {
             if (findRandomFood) {
-                alert(`You can eat randomly ${findRandomFood.name} which price is ${findRandomFood.price}`)
+                alert(`You can eat randomly ${findRandomFood.name} which price is ${findRandomFood.price} `)
             }
 
 
