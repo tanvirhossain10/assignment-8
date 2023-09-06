@@ -1,57 +1,95 @@
 .single-cart-info {
     /* display: flex; */
-
+    margin-bottom: 30px;
 
     /* position: static; */
     /* margin-top: -20px; */
 }
 
 .eachSeletedItem {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    /* justify-content: space-evenly; */
+    margin-left: 30px;
+    /* margin-bottom: 10px; */
+    /* margin-top: -20px; */
+    /* box-sizing: border-box; */
+    /* padding: 40px; */
+}
+
+.single-cart-info p {
+    margin-left: 30px;
 }
 
 .single-cart-info img,
 p {
-    margin-left: 30px;
+    /* margin-left: 30px; */
+    /* margin-left: 30px; */
     margin-top: 5px;
 
 
 }
 
 .single-cart-info img {
+
+    width: 30px;
+    height: 30px;
     /* position: relative; */
     /* background-color: black; */
 
-    background-color: black;
-    background-size: 1000px 400px;
-    padding: 10px;
-    box-sizing: border-box;
+    /* background-color: black; */
+    /* background-size: 1000px 400px; */
+    /* padding: 10px; */
+    /* border-radius: 25px; */
+    /* bacg */
+    /* box-sizing: border-box; */
     /* display: none; */
     /*  */
     /* top: auto; */
     /* left: 0; */
+    /* position: relative; */
 
 }
 
 .singleCartImgStyle {
     /* background-color: black; */
-    border-radius: 1000%;
-    width: 100%;
+    /* border-radius: 1000%; */
+    /* width: 100%; */
 }
 
 .selectedFoodBackground {
+    /* display: ; */
+
     /* position: absolute; */
-    margin-left: 15px;
+    /* position: absolute; */
+    /* margin-left: 150px; */
+    background-color: black;
+    /* display: block; */
+    /* margin-left: 20px; */
+    /* top: 50%;
+    left: 50%; */
+    /* right: 0; */
+    /* width: 100%; */
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* left: 50%; */
+    /* top: 50%; */
+
     /* margin-top: 40px; */
     /* padding-top: 10px; */
-    width: 50px;
+    /* width: 50px; */
     /* height: 50px; */
     /* height: auto; */
     /* width: 100%; */
     /* background-color: black; */
-    border-radius: 100%;
+    /* border-radius: 100%; */
     /* margin-top: 10px; */
     /* margin-bottom: 200px; */
+    /* position: static; */
+    /* padding: 20px; */
+    /* box-sizing: border-box; */
+    /* box-sizing: border-box; */
+    padding: 10px;
+    border-radius: 50px;
 }

@@ -14,6 +14,11 @@ const Products = () => {
     const btnHandler = id => {
         const find = products.find(product => product.id === id);
         if (find) {
+            const duplicateSelect = cart.find(product => product.id === id);
+            if (duplicateSelect) {
+                alert('you can only select one products at time beacuse doublce select of a products will give me some error in console')
+                return
+            }
             setCart([...cart, find])
         }
 

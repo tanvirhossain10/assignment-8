@@ -4,11 +4,13 @@ const SingleCart = ({ SingleCart }) => {
     const { img, name } = SingleCart;
     return (
         <div className='single-cart-info'>
-            <div className="selectedFoodBackground">
-                {/* fdj */}
-            </div>
+
             <div className="eachSeletedItem">
-                <img src={img} alt="" />
+                <div className="selectedFoodBackground">
+                    {/* fdj */}
+                    <img src={img} alt="" />
+                </div>
+
 
                 <p>{name}</p>
             </div>
