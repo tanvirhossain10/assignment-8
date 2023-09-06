@@ -57,6 +57,17 @@ const Products = () => {
     const choseAginBtn = () => {
         setCart([])
     }
+    const dustBtn = (removedFood) => {
+        console.log(removedFood)
+        if (removedFood) {
+            console.log(removedFood.id)
+            // const find = cart.find(removedFood.id === cart.id);
+            const notExit = cart.filter((dustFood) => removedFood.id !== dustFood.id);
+            setCart(notExit)
+            console.log(notExit)
+
+        }
+    }
 
     return (
         <div className='products'>
@@ -67,7 +78,7 @@ const Products = () => {
                 }
             </div>
             <div className="cart">
-                <Cart cart={cart} ChoseForMEBtn={ChoseForMEBtn} choseAginBtn={choseAginBtn}></Cart>
+                <Cart cart={cart} ChoseForMEBtn={ChoseForMEBtn} choseAginBtn={choseAginBtn} dustBtn={dustBtn}></Cart>
 
             </div>
         </div>

@@ -10,8 +10,8 @@ const Product = ({ products, btnHandeler }) => {
         <div className='single-product'>
             <img src={img} alt="" />
             <div className="product-info">
-                <p><h4>{name}</h4></p>
-                <p><h3>${price}</h3></p>
+                <h4>{name}</h4>
+                <h3>$ {price}</h3>
             </div>
             <button onClick={() => btnHandeler(id)}><p>Add hungry cart</p> <FontAwesomeIcon icon={faShoppingBasket}></FontAwesomeIcon></button>
         </div>

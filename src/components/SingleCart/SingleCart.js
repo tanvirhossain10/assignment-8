@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SingleCart.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-const SingleCart = ({ SingleCart }) => {
+const SingleCart = ({ SingleCart, dustBtn }) => {
     const { img, name } = SingleCart;
 
     return (
@@ -18,7 +18,7 @@ const SingleCart = ({ SingleCart }) => {
                 <p>{name}</p>
 
             </div>
-            <p className='fontAwesome'><FontAwesomeIcon icon={faTrashAlt} ></FontAwesomeIcon></p>
+            <p className='fontAwesome' onClick={() => dustBtn(SingleCart)}><FontAwesomeIcon icon={faTrashAlt} ></FontAwesomeIcon></p>
 
         </div>
     );
