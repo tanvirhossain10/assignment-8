@@ -50,6 +50,9 @@ const Products = () => {
 
 
     }
+    const choseAginBtn = () => {
+        setCart([])
+    }
 
     return (
         <div className='products'>
@@ -60,7 +63,7 @@ const Products = () => {
                 }
             </div>
             <div className="cart">
-                <Cart cart={cart} ChoseForMEBtn={ChoseForMEBtn}></Cart>
+                <Cart cart={cart} ChoseForMEBtn={ChoseForMEBtn} choseAginBtn={choseAginBtn}></Cart>
 
             </div>
         </div>
