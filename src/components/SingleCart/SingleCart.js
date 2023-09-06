@@ -5,7 +5,7 @@ const SingleCart = ({ SingleCart }) => {
     return (
         <div className='single-cart-info'>
             <div className="selectedFoodBackground">
-                fdj
+                {/* fdj */}
             </div>
             <div className="eachSeletedItem">
                 <img src={img} alt="" />
