@@ -1,5 +1,8 @@
 .single-cart-info {
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
 }
 
 .eachSeletedItem {
@@ -27,4 +30,13 @@ p {
     background-color: black;
     padding: 10px;
     border-radius: 50px;
+}
+
+.fontAwesome {
+    /* display: inline-block; */
+    /* background-color: red; */
+    margin-right: 10px;
+    /* display: block; */
+    /* background-color: red; */
+    /* display: none; */
 }

@@ -1,7 +1,10 @@
 import React from 'react';
 import './SingleCart.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 const SingleCart = ({ SingleCart }) => {
     const { img, name } = SingleCart;
+
     return (
         <div className='single-cart-info'>
 
@@ -13,7 +16,10 @@ const SingleCart = ({ SingleCart }) => {
 
 
                 <p>{name}</p>
+
             </div>
+            <p className='fontAwesome'><FontAwesomeIcon icon={faTrashAlt} ></FontAwesomeIcon></p>
+
         </div>
     );
 };
