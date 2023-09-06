@@ -17,6 +17,10 @@ const Cart = ({ cart }) => {
                 <div className="allSelectedFood">
                     {cart.map(singlecrt => <SingleCart SingleCart={singlecrt} key={singlecrt.id}></SingleCart>)}
                 </div>
+                <div id='randomBtnDiv'>
+                    <button id='randomBtn'>Chose 1 FOR ME </button>
+                    <button id='choseAgianBtn'>Chose 1 FOR ME </button>
+                </div>
 
             </div>
         </div>

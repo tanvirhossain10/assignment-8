@@ -11,6 +11,7 @@ const Products = () => {
             .then(data => setProducts(data))
     }, []);
     const [cart, setCart] = useState([]);
+    const [random, setRandom] = useState([]);
     const btnHandler = id => {
         const find = products.find(product => product.id === id);
         if (find) {
@@ -19,10 +20,14 @@ const Products = () => {
                 alert('you can only select one products at time beacuse doublce select of a products will give me some error in console')
                 return
             }
-            setCart([...cart, find])
+            setCart([...cart, find]);
+            setRandom([...random, find.random]);
+
         }
 
+
     }
+    console.log(random)
 
     return (
         <div className='products'>

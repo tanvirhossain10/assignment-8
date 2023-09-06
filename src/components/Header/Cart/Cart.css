@@ -38,5 +38,34 @@
 
 .allSelectedFood {
 
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+#randomBtnDiv button {
+    margin-bottom: 10px;
+    background-color: rgb(213, 46, 16);
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    /* border: none; */
+    border: 0.5px solid yellow;
+
+}
+
+#randomBtnDiv {
+    /* padding-bottom: 100px; */
+}
+
+#choseAgianBtn {
+    color: rgb(223, 132, 14);
+}
+
+#randomBtn {
+    color: rgb(9, 226, 60);
+    /* background-color: w; */
+}
+
+#randomBtnDiv button:hover {
+    background-color: chocolate;
+    color: white;
 }
