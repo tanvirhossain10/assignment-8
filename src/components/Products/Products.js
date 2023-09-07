@@ -22,7 +22,7 @@ const Products = () => {
         if (find) {
             const duplicateSelect = cart.find(product => product.id === id);
             if (duplicateSelect) {
-                alert('you can only select one products at time beacuse doublce select of a products will give me some error in console')
+                alert('You can not add more than 1 products at a time')
                 return
             }
             setCart([...cart, find]);
