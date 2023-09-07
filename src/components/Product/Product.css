@@ -39,3 +39,10 @@
 .product-info {
     margin-left: 15px;
 }
+
+@media only screen and (max-width: 800px) {
+    .single-product img {
+        width: 150px;
+        height: 150px;
+    }
+}

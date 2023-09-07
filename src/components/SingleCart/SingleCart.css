@@ -40,3 +40,18 @@ p {
     /* background-color: red; */
     /* display: none; */
 }
+
+@media only screen and (max-width: 800px) {
+    .eachSeletedItem {
+        /* display: flex; */
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 0;
+    }
+
+    .single-cart-info p {
+        margin-left: 8px;
+    }
+
+
+}

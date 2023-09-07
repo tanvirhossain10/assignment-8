@@ -15,7 +15,7 @@ const SingleCart = ({ SingleCart, dustBtn }) => {
                 </div>
 
 
-                <p>{name}</p>
+                <p className='nameIdOfSelectedFoodItem'>{name}</p>
 
             </div>
             <p className='fontAwesome' onClick={() => dustBtn(SingleCart)}><FontAwesomeIcon icon={faTrashAlt} ></FontAwesomeIcon></p>
