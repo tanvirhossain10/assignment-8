@@ -1,29 +1,16 @@
 .cart-c {
 
     margin-top: 30px;
-    /* margin-bottom: 600px; */
     margin-left: 10px;
     position: sticky;
-    /* top: 0; */
-    /* display: none; */
-    /* height: auto; */
-    /* position: absolute; */
     top: 0;
-    /* right: 0; */
-    /* width: 45%; */
-    /* height: 15%; */
-    /* display: inline; */
     background-color: white;
     height: auto;
     border-radius: 20px;
-    /* width: auto; */
-    /* padding-right: 20%; */
-    /* margin-top: -300px; */
 }
 
 .cart-info {
     margin-top: 30%;
-    /* margin-bottom: 40%; */
 
 }
 
@@ -50,21 +37,17 @@
     width: 50%;
     margin-left: 20px;
     border-radius: 10px;
-    /* border: none; */
     border: 0.5px solid yellow;
     display: block;
 
 }
 
 #randomBtnDiv {
-    /* padding-bottom: 100px; */
     padding-bottom: 20px;
 }
 
 #choseAgianBtn {
     color: rgb(223, 132, 14);
-    /* background-color: red; */
-    /* width: 100%; */
 }
 
 #randomBtn {
@@ -83,11 +66,8 @@
         background-color: rgb(213, 46, 16);
         padding: 10px;
         width: 100%;
-        /* margin-left: 20px; */
         border-radius: 10px;
-        /* border: none; */
         border: 0.5px solid yellow;
-        /* display: block; */
         margin-left: 0;
 
     }

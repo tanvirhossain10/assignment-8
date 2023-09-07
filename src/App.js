@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
 import Products from './components/Products/Products';
-import QuestionAns from './components/SingleCart/AnsToQuestion/QuestionAns';
+import QuestionAns from './components/AnsToQuestion/QuestionAns';
 
 function App() {
   return (

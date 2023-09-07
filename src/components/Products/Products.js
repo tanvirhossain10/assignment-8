@@ -36,9 +36,7 @@ const Products = () => {
 
 
     const ChoseForMEBtn = (arr) => {
-        console.log(arr)
         const ran = randomNumber(random);
-        console.log(ran);
         const findRandomFood = arr.find(randomnum => randomnum.random === ran);
         if (arr.length > 1) {
             if (findRandomFood) {
@@ -48,7 +46,6 @@ const Products = () => {
 
         }
         else {
-            console.log('alert')
             alert('Please select at least two products for randomly selected product')
         }
 
@@ -58,14 +55,9 @@ const Products = () => {
         setCart([])
     }
     const dustBtn = (removedFood) => {
-        console.log(removedFood)
         if (removedFood) {
-            console.log(removedFood.id)
-            // const find = cart.find(removedFood.id === cart.id);
             const notExit = cart.filter((dustFood) => removedFood.id !== dustFood.id);
             setCart(notExit)
-            console.log(notExit)
-
         }
     }
 
